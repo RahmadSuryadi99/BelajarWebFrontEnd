@@ -1,0 +1,15 @@
+.field-row {
+  margin: 20px 0;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.field-row > input {
+  /* position: absolute;*/
+  width: 200px;
+}
+/* input[type="radio"] {
+  width: 10px;
+} */
