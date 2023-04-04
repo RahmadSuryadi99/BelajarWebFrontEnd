@@ -1,0 +1,181 @@
+/* div {
+    color: red;
+} */
+
+/* .[classname] */
+/* .paragraph {
+    color: green;
+}
+
+p.paragraph {
+    color: black;
+}
+
+div,
+p {
+    background-color: gray;
+} */
+
+/* #[idname] */
+/* #salam{
+    color: blueviolet;
+} */
+/* 
+[type="text"] {
+    color: pink;
+}
+
+p {
+    color: yellow;
+}
+
+div {
+    color: black;
+}
+
+div,
+p {
+    color: yellow;
+}
+
+div p {
+    color: black;
+}
+
+div~p {
+    color: yellow;
+}
+p{
+    color: brown;
+}
+div p{
+    color: black;
+}
+div div p{
+    color: brown;
+}
+.layerSatu p{
+    color: black;
+}
+.layerSatu div p{
+    color: black;
+}
+.layerDua p{
+    color: brown;
+}
+div.layerSatu p{
+    color: black;
+}
+div .layerDua p {
+    color: brown;
+}
+div div.layerDua p {
+    color: brown;
+}
+div.layerSatu div p{
+    color: black;
+}
+div.layerSatu div.layerDua p {
+    color: brown;
+}
+.layerSatu .layerDua .salam  {
+    color: black;
+}
+div.layerSatu .layerDua .salam {
+    color: brown;
+}
+div.layerSatu div.layerDua .salam {
+    color: black;
+}
+#pSalam{
+    color: brown;
+}
+div #pSalam{
+    color: black;
+}
+div div #pSalam{
+    color: brown;
+}
+div.layerSatu div.layerDua p.salam {
+    color: black;
+}
+div.layerSatu div.layerDua #pSalam {
+    color: brown;
+}
+div, div,p{
+    color: aqua;
+}
+div>div>p{
+
+}
+div>p.salam{
+
+}
+div p.salam {} */
+
+div.positionOne > p.salam + span {
+  color: blueviolet;
+}
+.positionTwo > div {
+  color: aqua;
+}
+.positionTwo > div + p.salam {
+  color: red;
+}
+div.positionTwo > div ~ :first-child {
+  color: chartreuse;
+}
+.positionTwo > div ~ p {
+  color: green;
+}
+/* 
+p.salam+span{
+    color: cadetblue;
+}
+div.salam+span{
+    color: cadetblue;
+}
+.posisitionTwo>:first-child{
+    color: orange;
+}
+div.posisitionTwo>p:last-child{
+    color: blanchedalmond;
+}
+div.posisitionTwo>div~ .salam{
+    color: beige;
+}
+.posisitionTwo>div + p.salam{
+    color: yellow;
+} */
+div.kotak {
+  background-color: rebeccapurple;
+  height: 50px;
+  width: 50px;
+  border-width: 2px;
+  border-style: solid;
+  position: relative;
+  top: 50px;
+  left: 300px;
+  right: 200px;
+  bottom: 0;
+}
+div > div.lingkaran {
+  background-color: green;
+  height: 25px;
+  width: 25px;
+  border-radius: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 154, 0, 1) 10%,
+    rgba(208, 222, 33, 1) 20%,
+    rgba(79, 220, 74, 1) 30%,
+    rgba(63, 218, 216, 1) 40%,
+    rgba(47, 201, 226, 1) 50%,
+    rgba(28, 127, 238, 1) 60%,
+    rgba(95, 21, 242, 1) 70%,
+    rgba(186, 12, 248, 1) 80%,
+    rgba(251, 7, 217, 1) 90%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}

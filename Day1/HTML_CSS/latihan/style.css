@@ -1,0 +1,85 @@
+p{
+    color: yellow;
+}
+/* div p{
+    color: black;
+} */
+/* 
+div div p{
+    color: red;
+} */
+.layerSatu{
+    color: black;
+}
+/*
+p {
+    color: yellow;
+}
+
+div p {
+    color: yellow;
+}
+
+div div p {
+    color: yellow;
+}
+
+.layerSatu {
+    color: yellow;
+}
+
+.layerSatu .layerDua {
+    color: yellow;
+}
+
+.layerSatu .layerDua .salam {
+    color: black;
+}
+
+.layerSatu div {
+    color: yellow;
+}
+
+.layerSatu div p {
+    color: yellow;
+}
+
+.layerSatu .layerDua p {
+    color: yellow;
+}
+
+.layerSatu div #pSalam {
+    color: yellow;
+}
+
+.layerSatu .layerDua #pSalam {
+    color: yellow;
+} */
+
+/* .layerSatu > .layerDua , .layerSatu > .layerDua{
+        color: yellow;
+    } */
+
+/* [class] {
+    color: yellow;
+}
+
+[id] {
+    color: yellow;
+}
+
+div [class] {
+    color: yellow;
+}
+
+div .layerDua [class] {
+    color: yellow;
+}
+
+.layerSatu [class] {
+    color: yellow;
+}
+
+.layerSatu div [class] {
+    color: yellow;
+} */

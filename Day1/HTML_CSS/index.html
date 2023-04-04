@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css dan js masuk ke dalam head -->
     <title>Document</title>
+    <!-- contoh styling external css-->
+    <link rel="stylesheet" href="style.css">
+    <!-- contoh styling internal css/inline css -->
+    <!-- <style>
+        p {
+            color: aquamarine;
+        }
+    </style> -->
+    <!-- best practice nya pake eksternal css -->
 </head>
+
 <body>
-    
+    <input>
+    <p class="paragraph">Hari ini tidak turun hujan.</p>
+    <hr />
+    <div>Hari ini cerah</div>
+    <!-- <p class="paragraph" style="color: red;">Semoga hari mu senin terus</p> -->
+    <p class="paragraph kata">Semoga hari mu senin terus</p>
+    <div id="salam" class="paragraph">
+        <p>Selamt pagi</p>
+    </div>
+    <!-- 
+    <p>tes1</p>
+    <p class="coba">tes2</p>
+    <p id="aja">tes3</p>
+    <p id="aja" class="coba">tes4</p> -->
+
+    <form>
+        <input type="text" placeholder="Nama Depan">
+        <input type="text" placeholder="Nama Belakang">
+        <input type="date">
+    </form>
+
+    <div class="layerSatu">
+        <div class="layerDua positionOne">
+            <p class="salam" id="pSalam">Selamat Pagi</p>
+            <span>Span Selamat pagi</span>
+        </div>
+        <div class="layerDua positionTwo">
+            <div></div>
+            <p class="salam">Selamat Siang</p>
+            <p class="salam">Selamat sore</p>
+            <p class="salam">Selamat malam</p>
+        </div>
+    </div>
+    <div class="kotak">
+        <div class="lingkaran"></div>
+    </div>
+    <input type="checkbox">laki</input>
+    <input type="checkbox">laki</input>
+
 </body>
+
 </html>
