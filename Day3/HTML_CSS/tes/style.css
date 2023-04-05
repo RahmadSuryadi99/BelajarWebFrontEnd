@@ -1,0 +1,107 @@
+/* menggunakan tag */
+/* p{
+    color: blueviolet;
+} */
+
+/* menggunakan class */
+.paragraph {
+    color: brown;
+}
+
+p.paragraph {
+    color: darkgreen;
+}
+
+.kata {
+    color: orange;
+}
+
+/* div,p{
+    background-color: azure;
+}  */
+/* div>p{
+    background-color: red;
+}  */
+/* menggunakan Id */
+#salam {
+    color: blue;
+}
+
+[type="text"] {
+    color: pink;
+}
+
+p.salam {
+    color: cornflowerblue;
+}
+
+/* 
+p{
+    color: black;
+}
+.coba {
+    color: red;
+}
+#aja{
+    color: aqua;
+}
+p,#aja, .coba{
+    color: green;
+} */
+
+/* hirarki
+inLine dalam tag
+ */
+/* tugas */
+
+div .layerSatu .salam {
+    color: aqua;
+}
+
+div {
+    color: red;
+}
+
+/* .[classname] */
+.paragraph {
+    color: green;
+}
+
+p.paragraph {
+    color: black;
+}
+
+div,
+p {
+    background-color: gray;
+}
+
+/* #[idname] */
+/* #salam{
+    color: blueviolet;
+} */
+
+[type="text"] {
+    color: pink;
+}
+
+p {
+    color: yellow;
+}
+
+div {
+    color: black;
+}
+
+div,
+p {
+    color: yellow;
+}
+
+div p {
+    color: black;
+}
+
+div~p {
+    color: yellow;
+}
