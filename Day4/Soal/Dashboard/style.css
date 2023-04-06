@@ -1,0 +1,182 @@
+.mainBody {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    "sideBar topBar"
+    "sideBar bodyArea";
+}
+.sideBar {
+  grid-area: sideBar;
+  background-color: #354052;
+  color: #d6d9dc;
+}
+.topBar {
+  grid-area: topBar;
+  /* border-bottom: solid #dddddf 1px; */
+}
+.bodyArea {
+  padding: 15px;
+  grid-area: bodyArea;
+}
+
+.wrapp-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.img {
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  background-color: #dddddf;
+}
+.wrapp-sideBarMenu {
+  width: 120px;
+  border-top: solid #2b3241 1px;
+  padding: 25px;
+  font-size: 11px;
+}
+.color {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 0px;
+}
+.color-box {
+  height: 10px;
+  width: 10px;
+  border: solid #ffffff 1px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.wrapp-sideBarMenu > div label {
+  margin-right: 10px;
+}
+.wrapp-sideBarMenu > :nth-child(1) {
+  margin-top: 15px;
+}
+.wrapp-sideBarMenu > :nth-child(1) > div.color-box {
+  background-color: #b26c10;
+}
+.wrapp-sideBarMenu > :nth-child(2) > div.color-box {
+  background-color: #0a84d3;
+}
+.wrapp-sideBarMenu > :nth-child(3) > div.color-box {
+  background-color: #920d10;
+}
+.wrapp-sideBarMenu > :nth-child(4) > div.color-box {
+  background-color: #426d15;
+}
+.wrapp-sideBarMenu > :nth-child(5) > div.color-box {
+  background-color: #344051;
+}
+i {
+  padding: 6px 0px;
+  padding-right: 12px;
+}
+.topBar > div {
+  border-left: solid #828282 1px;
+}
+.topBar > div.search {
+  padding-left: 10px;
+  display: flex;
+  flex: 1;
+}
+.topBar {
+  display: flex;
+  flex-direction: row;
+  border: solid black 1px;
+}
+.warnaIconTop {
+  border-color: black;
+  /* border-style: solid; */
+  border: 1px;
+  color: #828282;
+  padding: 13px;
+}
+input[type="search"] {
+  border: 0px;
+}
+
+input[type="search"]:focus {
+  background-color: #efe453;
+  outline-color: rgb(112, 216, 181);
+}
+thead {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+.tableData {
+  width: 100%;
+}
+.wrap-daftarEmp {
+  background-color: #383838;
+  width: fit-content;
+  color: white;
+  border-bottom-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 8px;
+  margin-bottom: 12px;
+}
+.headTbl {
+  height: 10px;
+  background-color: black;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.footTbl {
+  padding: 8px;
+  background-color: black;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+table {
+  font-size: 14px;
+  width: 100%;
+}
+thead {
+  height: 20px;
+}
+thead > tr > th {
+  padding-bottom: 8px;
+  font-size: 12px;
+  /* text-align: center; */
+}
+thead > tr {
+  height: 0px;
+  /* padding-top: 12px; */
+  /* text-align: center; */
+}
+tr {
+  height: 30px;
+  text-align: center;
+}
+tbody > tr {
+  background-color: #e6e6e6;
+}
+tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+/*
+daftarEmp {#383838}
+borderTopbar{#e9e9ea}
+placeholder {#c8d0db}
+icon topbar {#828282}sidebar icon{#d6d9dc} 
+table{#e6e6e6 #d3d3d3}
+font {#333333}
+
+vermilion #b26c10
+cerculean #0a84d3
+Velvet #920d10
+Olive #426d15
+Viridian #344051
+border #b8bdc3
+ */

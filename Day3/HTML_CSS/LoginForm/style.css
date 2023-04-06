@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin: 10px;
+  margin: 10px 0px;
 }
 .title-form > div {
   margin-left: 6px;
@@ -52,6 +52,8 @@ input {
   border-bottom: solid #1682fc 1px;
   margin: 10px 0px;
   color: white;
+  padding: 5px;
+  padding-left: 10px;
 }
 select {
   width: 100%;
@@ -93,4 +95,11 @@ select {
 a {
   color: white;
   text-decoration: none;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border: solid #0c1123 1px;
+  border-color: #15a9f8;
+  border-radius: 5px;
 }
