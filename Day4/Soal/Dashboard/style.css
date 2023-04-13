@@ -34,10 +34,11 @@
   border-radius: 100%;
   background-color: #dddddf;
 }
+.wrapp-sideBarColor,
 .wrapp-sideBarMenu {
   width: 120px;
   border-top: solid #2b3241 1px;
-  padding: 25px;
+  padding: 15px 0px;
   font-size: 11px;
 }
 .color {
@@ -53,47 +54,61 @@
   margin-right: 10px;
   border-radius: 2px;
 }
-.wrapp-sideBarMenu > div label {
-  margin-right: 10px;
+.wrapp-sideBarMenu > label {
+  margin: 20px;
 }
-.wrapp-sideBarMenu > :nth-child(1) {
+.wrapp-sideBarColor,
+.wrapp-sideBarMenu > div {
+  width: 160px;
+  padding: 10px 20px;
+  padding-right: 16px;
+}
+.wrapp-sideBarMenu > div:hover {
+  background-color: black;
+  border-left: solid #d3d3d3 4px;
+
+  padding: 10px 16px;
+}
+.wrapp-sideBarColor > :nth-child(1) {
   margin-top: 15px;
 }
-.wrapp-sideBarMenu > :nth-child(1) > div.color-box {
+.wrapp-sideBarColor > :nth-child(1) > .color-box {
   background-color: #b26c10;
 }
-.wrapp-sideBarMenu > :nth-child(2) > div.color-box {
+.wrapp-sideBarColor > :nth-child(2) > .color-box {
   background-color: #0a84d3;
 }
-.wrapp-sideBarMenu > :nth-child(3) > div.color-box {
+.wrapp-sideBarColor > :nth-child(3) > .color-box {
   background-color: #920d10;
 }
-.wrapp-sideBarMenu > :nth-child(4) > div.color-box {
+.wrapp-sideBarColor > :nth-child(4) > .color-box {
   background-color: #426d15;
 }
-.wrapp-sideBarMenu > :nth-child(5) > div.color-box {
+.wrapp-sideBarColor > :nth-child(5) > .color-box {
   background-color: #344051;
 }
 i {
-  padding: 6px 0px;
   padding-right: 12px;
 }
-.topBar > div {
-  border-left: solid #828282 1px;
+.topBar div {
+  display: flex;
+  /* flex: 1; */
+}
+.topBar > div > div {
+  border-left: solid #cfcfcf 1px;
 }
 .topBar > div.search {
   padding-left: 10px;
+  /* display: inline; */
   display: flex;
-  flex: 1;
 }
 .topBar {
   display: flex;
   flex-direction: row;
-  border: solid black 1px;
+  justify-content: space-between;
+  border-bottom: solid #cfcfcf 1px;
 }
 .warnaIconTop {
-  border-color: black;
-  /* border-style: solid; */
   border: 1px;
   color: #828282;
   padding: 13px;
@@ -103,6 +118,9 @@ input[type="search"] {
 }
 
 input[type="search"]:focus {
+  font-size: 10px;
+  padding: 5px;
+  margin: 5px;
   background-color: #efe453;
   outline-color: rgb(112, 216, 181);
 }
@@ -123,12 +141,6 @@ thead {
   padding: 8px;
   margin-bottom: 12px;
 }
-.headTbl {
-  height: 10px;
-  background-color: black;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
 .footTbl {
   padding: 8px;
   background-color: black;
@@ -146,15 +158,9 @@ thead {
   height: 20px;
 }
 thead > tr > th {
-  padding-bottom: 8px;
   font-size: 12px;
-  /* text-align: center; */
 }
-thead > tr {
-  height: 0px;
-  /* padding-top: 12px; */
-  /* text-align: center; */
-}
+
 tr {
   height: 30px;
   text-align: center;
@@ -165,6 +171,20 @@ tbody > tr {
 tr:nth-child(even) {
   background-color: #d3d3d3;
 }
+th:nth-child(1) {
+  border-top-left-radius: 12px;
+}
+th:nth-child(5) {
+  border-top-right-radius: 12px;
+}
+input[name="cekWarna"] {
+  display: none;
+}
+
+input[name="cekWarna"]:checked + label.color-box::after {
+  content: "\2713";
+}
+
 /*
 daftarEmp {#383838}
 borderTopbar{#e9e9ea}

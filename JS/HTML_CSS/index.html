@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style/font-awesome.css">
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <script src="JavaScript/object/Person.js"></script>
+    <script src="JavaScript/object/Karyawan.js"></script>
+    <link rel="stylesheet" href="Style/form.css">
+    <script src="JavaScript/jquery-3.5.1.js"></script>
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/before.js"></script>
+    <script src="JavaScript/submit.js"></script>
+    <script src="JavaScript/ajax.js"></script>
+
+    <!-- <script src="JavaScript/index.js" defer></script> -->
+</head>
+
+<body>
+    <!-- <div class="navigation">
+        <div class="home">Home</div>
+        <div class="about">About</div>
+        <div class="galery">Galery</div>
+        <div class="contact">Contact</div>
+    </div> -->
+    <div class="main-body">
+        <div class="header">Lampung Pride</div>
+        <div class="nav">
+            <div class="home"></div>
+            <div class="about"></div>
+            <div class="galery"></div>
+            <div class="contact"></div>
+        </div>
+        <div class="navSide">
+            <div class="homee">Home</div>
+            <div class="aboutt">About</div>
+            <div class="galeryy">Galery</div>
+            <div class="contactt">Contact</div>
+        </div>
+        <div class="body-content">
+            <button id="setNameMenu" type="button">ubah</button>
+            <form method="post" id="formBiodata">
+                <div class="field-row">
+                    <label class="tes" for="namaDepan">Nama Depan: </label>
+                    <input id="namaDepan" type="text" placeholder="Nama Depan">
+                </div>
+                <div class="field-row">
+                    <label for="namaBelakang">Nama Belakang: </label>
+                    <input id="namaBelakang" type="text" placeholder="Nama Belakang">
+                </div>
+                <div class="field-row">
+                    <label for="tempatLahir">Tempat lahir: </label>
+                    <input id="tempatLahir" type="text" placeholder="Tempat lahir">
+                </div>
+                <div class="field-row">
+                    <label for="tglLahir">Tanggal Lahir: </label>
+                    <input id="tglLahir" type="date" placeholder="dd/YYY/MM" val>
+                </div>
+                <div class="field-row">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat"></textarea>
+                </div>
+                <div class="field-row">
+                    <label for="noHp">No Hp: </label>
+                    <input id="noHp" type="tel" placeholder="No Hp">
+                </div>
+                <div class="field-row">
+                    <Label>Jenis Kelamin</Label>
+                    <Input type="radio" name="gender" value="Laki-laki">Laki-laki</Input>
+                    <Input type="radio" name="gender" value="Perempuan">Perempuan</Input>
+                </div>
+                <button type="submit" id="submit">submit</button>
+                <button type="button" id="simpan" onclick=updateData() style="display: none">Update</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Action</th>
+                        <th>ID</th>
+                        <th>Nama Lengkap</th>
+                        <th>Tempat Tinggal</th>
+                        <th>Alamat</th>
+                        <th>No. Hp</th>
+                        <th>Jenis Kelamin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="t1">
+                        <td></td>
+                        <td class="action">
+                            <a class="btn btn-update"  onclick=updtRow(this)  >
+                                <i class="fa fa-pencil">
+                                    <span>Edit</span>
+                                </i>
+                            </a>
+                            <a class="btn btn-delete" onclick=delRow(this)>
+                                <i class="fa fa-trash">
+                                    <span>hapus</span>
+                                </i>
+                            </a>
+                        </td>
+                        <td>1.</td>
+                        <td>Vina Septiani</td>
+                        <td>Jakarta, 18 Juli 1994</td>
+                        <td>Cipinang Besar Utara,Jatinegara,Jakarta Timur</td>
+                        <td>08123234232</td>
+                        <td>Perempuan</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

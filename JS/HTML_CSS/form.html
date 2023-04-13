@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="Image/icoon.png">
+    <link rel="stylesheet" href="Style/font-awesome.css">
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="stylesheet" href="Style/form.css">
+</head>
+
+<body>
+    <div class="title-form">
+        <h1>Form Biodata</h1>
+        <img src="Image/icoon.png">
+    </div>
+    <form method="post" class="form-biodata">
+        <div class="field-row">
+            <label for="namaDepan">Nama Depan: </label>
+            <input id="namaDepan" type="text" placeholder="Nama Depan">
+        </div>
+        <div class="field-row">
+            <label for="namaBelakang">Nama Belakang: </label>
+            <input id="namaBelakang" type="text" placeholder="Nama Belakang">
+        </div>
+        <div class="field-row">
+            <label for="tanggalLahir">Tanggal Lahir: </label>
+            <input id="tanggalLahir" type="date" placeholder="dd/YYY/MM">
+        </div>
+        <div class="field-row">
+            <Label>Jenis Kelamin</Label>
+            <Input type="radio" name="gender" value="Laki-laki">Laki-laki</Input>
+            <Input type="radio" name="gender" value="Perempuan">Perempuan</Input>
+        </div>
+        <div class="field-row">
+            <label>Alamat</label>
+            <textarea id="alamat"></textarea>
+        </div>
+        <div class="field-row">
+            <Label>Hobi </Label>
+            <div>
+                <input name="hobi" id="olahRaga" type="checkbox" value="Olahraga">
+                <label class="replace-checkbox" for="olahRaga"></label>
+                <label>Olahraga</label>
+                <!-- <Input type="checkbox" value="olahraga">Olahraga</Input> -->
+            </div>
+            <div>
+                <input name="hobi" id="memasak" type="checkbox" value="memasak">
+                <label class="replace-checkbox" for="memasak"></label>
+                <label>Memasak</label>
+                <!-- <Input type="checkbox" value="memasak">Memasak</Input> -->
+            </div>
+            <div>
+                <input name="hobi" id="musik" type="checkbox" value="musik">
+                <label class="replace-checkbox" for="musik"></label>
+                <label>Bermain musik</label>
+                <!-- <Input type="checkbox" value="musik">Bermain Musik</Input> -->
+            </div>
+        </div>
+        <div class="field-row">
+            <label>Jenis Karyawan</label>
+            <select name="jenisKaryawan" id="jenisKaryawan">
+                <option value="">- Pilih Jenis Karyawan -</option>
+                <option value="KK">Karyawan Kontrak</option>
+                <option value="KT">Karyawan Tetap</option>
+            </select>
+        </div>
+        <div class="field-row">
+            <label>Makanan/Minuman Favorite</label>
+            <select>
+                <option>- Pilih Makanan Favorit-</option>
+                <optgroup label="Makanan">
+                    <option>Soto</option>
+                    <option>Nasi Goreng</option>
+                    <option>Mie Goreng</option>
+                    <option>Sate</option>
+                </optgroup>
+                <optgroup label="Minuman">
+                    <option value="">Lemon Tea</option>
+                    <option value="">Fanta</option>
+                    <option value="">Nutrisari</option>
+                </optgroup>
+            </select>
+        </div>
+        <button type="submit">Simpan</button>
+        <button type="button">button</button>
+    </form>
+</body>
+
+</html>

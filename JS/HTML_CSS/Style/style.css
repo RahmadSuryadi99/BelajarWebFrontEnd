@@ -1,0 +1,105 @@
+table {
+  width: 100%;
+  margin-bottom: 25px;
+  margin: 100px 50px;
+  /* bisa masukin atas bawah kanan kiri */
+}
+td {
+  border: solid 1px black;
+  padding: 5px;
+}
+th {
+  background-color: black;
+  color: white;
+  /* padding: 6px; */
+}
+.fa-times-circle {
+  color: red;
+}
+.fa-check-circle {
+  color: green;
+}
+.btn {
+  border-radius: 4px;
+  padding: 5px;
+  margin: 10px;
+}
+.btn-update {
+  background-color: red;
+}
+.btn-delete {
+  background-color: orange;
+}
+.div {
+  /* display: block; */
+  background-color: aquamarine;
+  /* padding: 10px; */
+}
+.navigation {
+  /* display: flex;
+	justify-content: space-around;
+	flex-direction: row; */
+  /* align-content: center; */
+  /* padding: 10px; */
+  background-color: cadetblue;
+  display: grid;
+}
+
+.homee,
+.aboutt,
+.galeryy,
+.contactt {
+  text-align: center;
+  background-color: brown;
+  border: solid 1px;
+  color: white;
+}
+.home:hover,
+.about:hover,
+.galery:hover,
+.contact:hover {
+  text-align: center;
+  color: black;
+  display: inline;
+}
+
+.main-body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px 45px auto 25px;
+  background-color: aquamarine;
+  grid-template-areas:
+    "header header "
+    "nav nav "
+    "navSide body-content "
+    "footer footer ";
+}
+.header {
+  grid-area: header;
+  background-color: blue;
+  justify-content: center;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  grid-area: nav;
+  background-color: purple;
+  color: white;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+.navSide {
+  display: block;
+  grid-area: navSide;
+  background-color: brown;
+}
+.body-content {
+  grid-area: body-content;
+  background-color: yellow;
+}
+.footer {
+  grid-area: footer;
+  background-color: blueviolet;
+}

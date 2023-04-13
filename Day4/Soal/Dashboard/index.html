@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="../Resources/Content/font-awesome.min.css" />
     <link rel="stylesheet" href="../Resources/Content/font-awesome.css" />
     <link rel="stylesheet" href="../Resources/Content/normalize.css" />
+
 
     <title>Document</title>
 </head>
@@ -17,13 +19,12 @@
     <div class="mainBody">
         <div class="sideBar">
             <div class="wrapp-img">
-                <img class="img" src="../Resources/Image/photo.jpg" />
+                <img class="img" src="Resources/Image/photo.jpg" />
                 <label>Anna Worthington</label>
             </div>
             <div>
-
                 <div class="wrapp-sideBarMenu">
-                    Main Menu
+                    <label>Menu</label>
                     <div>
                         <i class="fa fa-home"></i><label>HOME</label>
                     </div>
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="wrapp-sideBarMenu">
-                    Admin Menu
+                    <label for="">Admin Menu</label>
                     <div>
                         <i class="fa fa-users"></i><label>USER</label>
                     </div>
@@ -58,25 +59,30 @@
                         <i class="fa fa-share-alt"></i><label>SOCIAL</label>
                     </div>
                 </div>
-                <div class="wrapp-sideBarMenu">
+                <div class="wrapp-sideBarColor">
                     <div class="color">
-                        <div class="color-box"></div>
+                        <input name="cekWarna" type="radio" id="Vermilion" value="Vermilion">
+                        <label class="color-box" for="Vermilion"></label>
                         <label>Vermilion</label>
                     </div>
                     <div class="color">
-                        <div class="color-box"></div>
+                        <input name="cekWarna" type="radio" id="Cerulean" value="Cerulean">
+                        <label class="color-box" for="Cerulean"></label>
                         <label>Cerulean</label>
                     </div>
                     <div class="color">
-                        <div class="color-box"></div>
+                        <input name="cekWarna" type="radio" id="Velvet" value="Velvet">
+                        <label class="color-box" for="Velvet"></label>
                         <label>Velvet</label>
                     </div>
                     <div class="color">
-                        <div class="color-box"></div>
+                        <input name="cekWarna" type="radio" id="Olive" value="Olive">
+                        <label class="color-box" for="Olive"></label>
                         <label>Olive</label>
                     </div>
                     <div class="color">
-                        <div class="color-box"></div>
+                        <input name="cekWarna" type="radio" id="Viridian" value="Viridian">
+                        <label class="color-box" for="Viridian"></label>
                         <label>Viridian</label>
                     </div>
 
@@ -85,24 +91,27 @@
         </div>
         <div class="topBar">
             <div>
-                <i class="fa fa-bars warnaIconTop"></i>
-            </div>
-            <div class="search">
-                <input type="search" placeholder="Search for something">
-                <i class="fa fa-search warnaIconTop "></i>
+                <div>
+                    <i class="fa fa-bars warnaIconTop"></i>
+                </div>
+                <div class="search">
+                    <input type="search" placeholder="Search for something">
+                    <i class="fa fa-search warnaIconTop "></i>
+                </div>
             </div>
             <div>
-                <i class="fa fa-th warnaIconTop"></i>
-            </div>
-            <div>
-                <i class="fa fa-user warnaIconTop"></i>
+                <div>
+                    <i class="fa fa-th warnaIconTop"></i>
+                </div>
+                <div>
+                    <i class="fa fa-user warnaIconTop"></i>
+                </div>
             </div>
         </div>
         <div class="bodyArea">
             <div class="wrap-daftarEmp">
                 Daftar Employee Baru Indocyber
             </div>
-
             <div class="tableData">
                 <div class="headTbl"></div>
                 <table>
@@ -117,67 +126,67 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tommy Nurwantoro</td>
-                            <td>00984173</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Tommy Nurwantoro</td>
+                            <td data-label="Identification Number">00984173</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Rizki Permana</td>
-                            <td>01231173</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Rizki Permana</td>
+                            <td data-label="Identification Number">01231173</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Grayfield Moningkey</td>
-                            <td>00945645</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Grayfield Moningkey</td>
+                            <td data-label="Identification Number">00945645</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Bestama Adi Priambada</td>
-                            <td>00666773</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Bestama Adi Priambada</td>
+                            <td data-label="Identification Number">00666773</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Muhammad Imam</td>
-                            <td>00212345</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Muhammad Imam</td>
+                            <td data-label="Identification Number">00212345</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Agung Purwanto</td>
-                            <td>00234356</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Agung Purwanto</td>
+                            <td data-label="Identification Number">00234356</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Sosro Hartono</td>
-                            <td>00456778</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Sosro Hartono</td>
+                            <td data-label="Identification Number">00456778</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Lukman Triyadi</td>
-                            <td>00231455</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Lukman Triyadi</td>
+                            <td data-label="Identification Number">00231455</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                         <tr>
-                            <td>Mufid Junaedi</td>
-                            <td>00325667</td>
-                            <td>NET Developer</td>
-                            <td>Junior Programmer</td>
-                            <td>Golongan 7</td>
+                            <td data-label="Employee Name">Mufid Junaedi</td>
+                            <td data-label="Identification Number">00325667</td>
+                            <td data-label="Position">NET Developer</td>
+                            <td data-label="Level">Junior Programmer</td>
+                            <td data-label="Grade">Golongan 7</td>
                         </tr>
                     </tbody>
 
